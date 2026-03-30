@@ -1,0 +1,39 @@
+# Dependencies
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project
+uploads/
+.env
+*.xlsx
+*.csv
+*.log
+.idea/
+
+# Frontend build
+frontend/build/
+frontend/dist/
+
+# Backend
+backend/__pycache__/
+*.egg-info/
+.pytest_cache/
+
+# OS
+Thumbs.db
+.DS_Store
