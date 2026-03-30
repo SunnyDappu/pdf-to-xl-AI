@@ -1,0 +1,140 @@
+.result-display {
+  animation: slideUp 0.5s ease-out;
+  margin-top: 30px;
+}
+
+.result-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  border-top: 5px solid #51cf66;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.result-icon {
+  font-size: 2.5em;
+  animation: bounce 1s ease-in-out;
+}
+
+.result-header h2 {
+  margin: 0;
+  color: #51cf66;
+  font-size: 1.8em;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.result-content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.result-message {
+  color: #666;
+  font-size: 1.05em;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-download,
+.btn-new {
+  flex: 1;
+  min-width: 220px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-download {
+  background: linear-gradient(135deg, #51cf66 0%, #40c057 100%);
+  color: white;
+}
+
+.btn-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(81, 207, 102, 0.4);
+}
+
+.btn-new {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.btn-new:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.next-steps {
+  background-color: #f0f9ff;
+  border-left: 4px solid #51cf66;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.next-steps h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.next-steps ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.next-steps li {
+  padding: 8px 0;
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95em;
+}
+
+@media (max-width: 600px) {
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .btn-download,
+  .btn-new {
+    min-width: auto;
+  }
+
+  .result-card {
+    padding: 25px;
+  }
+
+  .result-header h2 {
+    font-size: 1.4em;
+  }
+}
